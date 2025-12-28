@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+/* Announcement-style: appear then slide up with fade */
+@keyframes slideUpFadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes slideDownFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 50px;
+    position: relative;
+}
+
+.grouper {
+    position: relative;
+}
+
+.tagline-item {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+}
+
+/* Visible tagline slides in from bottom */
+.tagline-item.active {
+    animation: slideDownFadeIn 1s ease-out forwards;
+}
+
+/* Hidden tagline slides out to top */
+.tagline-item.hidden {
+    animation: slideUpFadeOut 1s ease-out 1s forwards;
+    animation-fill-mode: both;
+}
+
+.search-icon {
+    vertical-align: middle;
+    fill: currentColor;
+}
+
+@media (width <= 48em) {
+     .search-icon {
+        visibility: hidden;
+     }
+}
