@@ -1,7 +1,9 @@
 import React from 'react'
-const Sarees = () => {
+
+const Footer = () => {
     return (
         <></>
     );
 }
-export default Sarees;
+
+export default Footer;

@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import OkhaiLogo from '../assets/okhaiLogo.avif';
-import '../global.css';
-import SearchIcon from '../assets/search-icon.png';
-import PersonIcon from '../assets/person-icon.png';
-import BagIcon from '../assets/bag-icon.jpg';
-import Accessories from './categories/Accessories';
+import OkhaiLogo from '../../assets/okhaiLogo.avif';
+import '../../global.css';
+import SearchIcon from '../../assets/search-icon.png';
+import PersonIcon from '../../assets/person-icon.png';
+import BagIcon from '../../assets/bag-icon.jpg';
+import Accessories from '../categories/Accessories';
+import Clothing from '../categories/Clothing';
+import Kurtas from '../categories/Kurtas';
+import Sarees from '../categories/Sarees';
 
 const Navbar = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,12 +23,12 @@ const Navbar = () => {
             setCurrentIndex(prev => (prev + 1) % taglines.length);
         }, 3000);
         return () => clearInterval(interval);
-    }, [taglines.length]);
+    }, []);
 
     return (
         <>
             <div>
-                <nav  className='bg-white border-b-4 border-black h-auto fixed top-0 w-screen z-50'>
+                <nav  className='bg-white border-b-4 border-black h-auto fixed top-0 w-screen z-50 navbar'>
                     {/* Taglines start here*/}
                     <div className='pt-0.5 overflow-hidden'>
                         <div className='grouper'>
@@ -42,17 +45,17 @@ const Navbar = () => {
                     {/* Taglines end here*/}
 
                     {/* Navbar container start here */}
-                    <div className='flex flex-row justify-between'>
-                        <div className='flex flex-row p-4'>
+                    <div className='flex flex-row justify-between mr-12'>
+                        <div className='flex flex-row p-3'>
                             <div className='lg:hidden md:block pt-2 pl-2'>
-                                <div className='text-4xl text-gray-400 hover:cursor-pointer'>&#9776;</div>
+                                <div className='text-4xl text-gray-400 hover:cursor-pointer toggle'>&#9776;</div>
                             </div>
-                            <div className='ml-4'>
+                            <div className='ml-14'>
                                 <img className='lg:h-21 md:h-14 sm:h-11 sm:mt-5 sm:ml-2 w-auto' src={OkhaiLogo} alt="Okhai Logo" />
                             </div>
                         </div>
                         {/* Navigation links here */}
-                        <div className='flex flex-row p-4 space-x-4 items-center'>
+                        <div className='flex flex-row p-3 space-x-4 items-center'>
                             <div>
                                 <img className='h-7  search-icon hover:cursor-pointer' src={SearchIcon} alt="Search Icon" />
                             </div>
@@ -78,24 +81,25 @@ const Navbar = () => {
                     </div>
                     {/* Search bar for mobile ends here*/}
 
+                    {/* Category menu starts here */}
                     <div>
-                        <div className='flex flex-row h-12 m-3 space-x-25 text-lg category-menu justify-center pt-3'>
+                        <div className='flex flex-row h-12 m-3 gap-x-25 text-lg category-menu justify-center pt-3'>
                             <details>
                                 <summary>CLOTHING</summary>
                                 <div className='absolute mt-2 p-4 bg-white border-2 border-black shadow-lg'>
-                                    regesgsrh
+                                    <Clothing />
                                 </div>
                             </details>
                             <details>
                                 <summary>KURTAS</summary>
                                 <div className='absolute mt-2 p-4 bg-white border-2 border-black shadow-lg'>
-                                    regesgsrh
+                                    <Kurtas />
                                 </div>
                             </details>
                             <details>
                                 <summary>SAREES</summary>
                                 <div className='absolute mt-2 p-4 bg-white border-2 border-black shadow-lg'>
-                                    
+                                    <Sarees />
                                 </div>
                             </details><details>
                                 <summary>ACCESSORIES</summary>
@@ -128,6 +132,7 @@ const Navbar = () => {
                             </details>
                         </div>
                     </div>
+                    {/* Category menu ends here */}
                 </nav>
             </div>
         </>

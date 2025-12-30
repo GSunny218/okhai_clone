@@ -26,6 +26,24 @@
     }
 }
 
+.navbar {
+
+    /* small devices */
+    @media (width <= 40rem) {   
+        height: 230px;
+    }
+
+    /* medium devices */
+    @media (width <= 48rem) {
+        height: 230px;
+    }
+
+    /* large devices */
+    @media (width <= 64rem) {
+        height: 230px;
+    }
+}
+
 .grouper {
     display: flex;
     flex-direction: column;
@@ -75,12 +93,23 @@
 
 .category-menu {
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    @media (width <= 96rem) {
+    column-gap: 4rem;
+   }
+
+   @media (width <= 68rem) {
+    column-gap: 1rem;
+   }
+
+    @media (width <= 64rem) {
+     visibility: hidden;
+    }
 }
 
-/* 1. Hide the default marker */
 summary {
   list-style: none;
-  cursor: pointer; /* Ensures a hand cursor appears on hover */
+  cursor: pointer;
 }
 summary::-webkit-details-marker {
   display: none;
@@ -88,10 +117,8 @@ summary::-webkit-details-marker {
 
 summary::after {
   content: " ▼";  /* Default state (closed) indicator  */
-  /* Add other styling like color, font-size, position as needed  */
 }
 
-/* 3. Change the indicator when the <details> element is open */
 details[open] summary::after {
   content: " ▲"; /* Open state indicator */
   color: chocolate;
