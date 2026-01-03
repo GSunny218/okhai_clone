@@ -8,8 +8,14 @@ import Accessories from '../categories/Accessories';
 import Clothing from '../categories/Clothing';
 import Kurtas from '../categories/Kurtas';
 import Sarees from '../categories/Sarees';
+import Slidebar from './SlideBar';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+    // const navigate = useNavigate();
+    // const handleSlideBarClick = () => {
+    //     navigate('/SlideBar');
+    // }
     const [currentIndex, setCurrentIndex] = useState(0);
     const taglines = [
         { text: 'Meticulously Designed & Handmade in Hierloom Indian Crafts.', bg: 'bg-orange-300' },
@@ -48,7 +54,8 @@ const Navbar = () => {
                     <div className='flex flex-row justify-between mr-12'>
                         <div className='flex flex-row p-3'>
                             <div className='lg:hidden md:block pt-2 pl-2'>
-                                <div className='text-4xl text-gray-400 hover:cursor-pointer toggle'>&#9776;</div>
+                                <div className='text-4xl text-gray-400 hover:cursor-pointer' >&#9776;</div>
+                                {/* <Slidebar /> */}
                             </div>
                             <div className='ml-14'>
                                 <img className='lg:h-21 md:h-14 sm:h-11 sm:mt-5 sm:ml-2 w-auto' src={OkhaiLogo} alt="Okhai Logo" />
@@ -101,12 +108,14 @@ const Navbar = () => {
                                 <div className='absolute mt-2 p-4 bg-white border-2 border-black shadow-lg'>
                                     <Sarees />
                                 </div>
-                            </details><details>
+                            </details>
+                            <details>
                                 <summary>ACCESSORIES</summary>
-                                <div className='absolute mt-2 p-4 bg-white border-2 border-black shadow-lg'>
+                                <div className='absolute  mt-2 p-4 bg-white border-2 border-black shadow-lg inset-x-40'>
                                     <Accessories />
                                 </div>
-                            </details><details>
+                            </details>
+                            <details>
                                 <summary>HOME</summary>
                                 <div className='absolute mt-2 p-4 bg-white border-2 border-black shadow-lg'>
                                     regesgsrh
