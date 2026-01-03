@@ -8,8 +8,13 @@ import Accessories from '../categories/Accessories';
 import Clothing from '../categories/Clothing';
 import Kurtas from '../categories/Kurtas';
 import Sarees from '../categories/Sarees';
+import Home from '../categories/Home.jsx';
+import Gifting from '../categories/Gifting.jsx';
+import Artisans from '../categories/Artisans.jsx';
+import SaleAll from '../categories/SaleAll.jsx';
 import Slidebar from './SlideBar';
 import { useNavigate } from 'react-router-dom';
+import SearchBar from '../utilies/searchBar.jsx';
 
 const Navbar = () => {
     // const navigate = useNavigate();
@@ -81,10 +86,7 @@ const Navbar = () => {
 
                     {/* Search bar for mobile starts here*/}
                     <div>
-                        <div className='flex flex-row align-middle justify-center border-2 border-black h-12 m-3 lg:hidden'>
-                            <img src={SearchIcon} className='h-6 mt-2 ml-2' alt="Search Icon" />
-                            <input type="text" className='border border-none p-2 w-screen relative flex flex-row justify-stretch m-3 active' placeholder='Search items'/>
-                        </div>
+                        <SearchBar />
                     </div>
                     {/* Search bar for mobile ends here*/}
 
@@ -118,25 +120,25 @@ const Navbar = () => {
                             <details>
                                 <summary>HOME</summary>
                                 <div className='absolute mt-2 p-4 bg-white border-2 border-black shadow-lg'>
-                                    regesgsrh
+                                    <Home />
                                 </div>
                             </details>
                             <details>
                                 <summary>GIFTING</summary>
                                 <div className='absolute mt-2 p-4 bg-white border-2 border-black shadow-lg'>
-                                    regesgsrh
+                                    <Gifting />
                                 </div>
                             </details>
                             <details>
                                 <summary>ARTISANS</summary>
                                 <div className='absolute mt-2 p-4 bg-white border-2 border-black shadow-lg'>
-                                    regesgsrh
+                                    <Artisans />
                                 </div>
                             </details>
                             <details>
                                 <summary>SALE ALL</summary>
                                 <div className='absolute mt-2 p-4 bg-white border-2 border-black shadow-lg'>
-                                    regesgsrh
+                                    <SaleAll />
                                 </div>
                             </details>
                         </div>

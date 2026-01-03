@@ -1,6 +1,6 @@
 import React from 'react';
-import A1 from "../../../public/company/accessories_p1.avif";
-import A2 from "../../../public/company/accessories_p2.avif";
+import A1 from "../../assets/company/accessories_p1.avif";
+import A2 from "../../assets/company/accessories_p2.avif";
 
 const Accessories = () => {
   return (
