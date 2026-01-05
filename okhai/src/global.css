@@ -26,23 +26,10 @@
     }
 }
 
-.navbar {
+/* .navbar {
 
-    /* small devices */
-    @media (width <= 40rem) {   
-        height: 230px;
-    }
-
-    /* medium devices */
-    @media (width <= 48rem) {
-        height: 230px;
-    }
-
-    /* large devices */
-    @media (width <= 64rem) {
-        height: 230px;
-    }
-}
+    
+} */
 
 .grouper {
     display: flex;
@@ -60,7 +47,7 @@
     color: white;
     text-align: center;
     padding: 10px 0;
-    font-size: 20px;
+    font-size: 15px;
     position: absolute;
     top: 0;
     left: 0;

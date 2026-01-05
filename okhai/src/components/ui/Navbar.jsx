@@ -39,9 +39,9 @@ const Navbar = () => {
     return (
         <>
             <div>
-                <nav  className='bg-white border-b-4 border-black sm:h-100 md:h-100 lg:h-60 xl:h-60 fixed top-0 w-screen z-50 navbar'>
+                <nav  className='bg-white border-b-4 border-black h-46 sm:h-50 md:h-50 lg:h-51 xl:h-50 fixed top-0 w-screen z-50 navbar'>
                     {/* Taglines start here*/}
-                    <div className='pt-0.5 overflow-hidden'>
+                    <div className='pt-1 overflow-hidden'>
                         <div className='grouper'>
                             {taglines.map((tagline, i) => (
                                 <div
@@ -65,7 +65,7 @@ const Navbar = () => {
                             </div>
 
                             <div className='ml-14'>
-                                <img className='lg:h-21 md:h-14 sm:h-11 sm:mt-5 sm:ml-2 w-auto' src={OkhaiLogo} alt="Okhai Logo" />
+                                <img className='lg:h-17 md:h-14 sm:h-9 sm:mt-5 sm:ml-2 w-auto' src={OkhaiLogo} alt="Okhai Logo" />
                             </div>
                         </div>
                         {/* Navigation links here */}
