@@ -39,7 +39,7 @@ const Navbar = () => {
     return (
         <>
             <div>
-                <nav  className='bg-white border-b-4 border-black h-46 sm:h-50 md:h-50 lg:h-51 xl:h-50 fixed top-0 w-screen z-50 navbar'>
+                <nav  className='bg-white h-46 sm:h-50 md:h-50 lg:h-51 xl:h-50 fixed top-0 w-screen z-50 navbar'>
                     {/* Taglines start here*/}
                     <div className='pt-1 overflow-hidden'>
                         <div className='grouper'>

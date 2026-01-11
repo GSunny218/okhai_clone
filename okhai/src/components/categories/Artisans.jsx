@@ -47,7 +47,7 @@ const Artisans = () => {
                         <div className='cursor-pointer'>Bageeya</div>
                     </div>
                 </div>
-                <div className='grid row-start-1 content-start gap-3'>
+                <div className='grid grid-row-1 gap-3'>
                     <div className='space-y-2'>
                         <div className='font-bold text-sm cursor-pointer'>Handblock Printing</div>
                         <div className='cursor-pointer'>Sooti Syahi</div>

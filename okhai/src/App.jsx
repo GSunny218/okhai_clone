@@ -3,13 +3,17 @@ import './global.css';
 import Navbar from './components/ui/Navbar.jsx';
 import Footer from './components/ui/Footer.jsx';
 import SlideBar from './components/ui/SlideBar.jsx';
+import Main from './components/ui/Main.jsx';
 
 function App() {
 
   return (
     <>
       <Navbar />
-      {/* <SlideBar /> */}
+      <div className='absolute top-52 left-0'>
+        <Main/>
+      </div>
+      
       {/* <Footer /> */}
     </>
   )
