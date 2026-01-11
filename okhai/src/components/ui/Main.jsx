@@ -4,6 +4,11 @@ import FPIMG2 from '../../assets/company/firstPageimgs/fpimg1.webp';
 import FPIMG3 from '../../assets/company/firstPageimgs/fpimg2.webp';
 import FPIMG4 from '../../assets/company/firstPageimgs/fpimg3.webp';
 import FPIMG5 from '../../assets/company/firstPageimgs/fpimg4.webp';
+import WE from '../../assets/company/firstPageimgs/WE_img.avif';
+import CF from '../../assets/company/firstPageimgs/CF_img.webp';
+import SUS from '../../assets/company/firstPageimgs/SUS_img.avif';
+import HC from '../../assets/company/firstPageimgs/HC_img.avif';
+import ER from '../../assets/company/firstPageimgs/ER_img.avif';
 
 const Main = () => {
     const images = [FPIMG1, FPIMG2, FPIMG3, FPIMG4, FPIMG5];
@@ -29,7 +34,7 @@ const Main = () => {
         <>
         <main>
             <section>
-                <div className='flex flex-col items-center justify-center gap-4 p-4'>
+                <div className='flex flex-col items-center justify-center gap-4 p-2'>
                     <div className='relative w-full overflow-hidden'>
                         <img 
                             key={currentIndex}
@@ -70,7 +75,25 @@ const Main = () => {
                 </div>
             </section>
             <section>
-                <div className='flex flex-col items-center justify-center gap-4 p-4 mt-10'></div>
+                <div className='flex flex-row items-center justify-center gap-4 mt-1'>
+                    <figure className='flex flex-col items-center justify-center'>
+                        <img src={WE} alt="" />
+                        <figcaption className='text-[11px] text-black font-serif mt-1'>Women Empowerment</figcaption>
+                    </figure>
+                    <figure className='flex flex-col items-center justify-center'>
+                        <img src={CF} alt="" />
+                        <figcaption className='text-[11px] text-black font-serif mt-1'>Cirular Fashion</figcaption>
+                    </figure>
+                    <figure className='flex flex-col items-center justify-center'>
+                        <img src={SUS} alt="" />
+                        <figcaption className='text-[11px] text-black font-serif mt-1'>Sustainable</figcaption>
+                    </figure>
+                    <figure className='flex flex-col items-center justify-center'>
+                        <img src={HC} alt="" />
+                        <figcaption className='text-[11px] text-black font-serif mt-1'>Heirloom Crafts</figcaption>
+                    </figure>
+                    <img src={ER} alt="" />
+                </div>
             </section>
         </main>
         </>
