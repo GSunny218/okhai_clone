@@ -75,24 +75,32 @@ const Main = () => {
                 </div>
             </section>
             <section>
-                <div className='flex flex-row items-center justify-center gap-4 mt-1'>
+                <div className='flex flex-row items-center justify-center gap-20 mt-1'>
                     <figure className='flex flex-col items-center justify-center'>
                         <img src={WE} alt="" />
-                        <figcaption className='text-[11px] text-black font-serif mt-1'>Women Empowerment</figcaption>
+                        <figcaption className='text-[11px] text-black font-serif mt-1  font-thin'>Women Empowerment</figcaption>
                     </figure>
                     <figure className='flex flex-col items-center justify-center'>
                         <img src={CF} alt="" />
-                        <figcaption className='text-[11px] text-black font-serif mt-1'>Cirular Fashion</figcaption>
+                        <figcaption className='text-[11px] text-black font-serif mt-1 font-thin'>Cirular Fashion</figcaption>
                     </figure>
                     <figure className='flex flex-col items-center justify-center'>
                         <img src={SUS} alt="" />
-                        <figcaption className='text-[11px] text-black font-serif mt-1'>Sustainable</figcaption>
+                        <figcaption className='text-[11px] text-black font-serif mt-1 font-thin'>Sustainable</figcaption>
                     </figure>
                     <figure className='flex flex-col items-center justify-center'>
                         <img src={HC} alt="" />
-                        <figcaption className='text-[11px] text-black font-serif mt-1'>Heirloom Crafts</figcaption>
+                        <figcaption className='text-[11px] text-black font-serif mt-1 font-thin'>Heirloom Crafts</figcaption>
                     </figure>
-                    <img src={ER} alt="" />
+                    <figure className='flex flex-col items-center justify-center'>
+                        <img src={ER} alt="" />
+                        <figcaption className='text-[11px] text-black font-serif mt-1 font-thin'>Easy Returns</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h1 className='text-center text-2xl tracking-wide font-serif'>Collections</h1>
                 </div>
             </section>
         </main>
