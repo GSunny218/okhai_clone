@@ -9,6 +9,10 @@ import CF from '../../assets/company/firstPageimgs/CF_img.webp';
 import SUS from '../../assets/company/firstPageimgs/SUS_img.avif';
 import HC from '../../assets/company/firstPageimgs/HC_img.avif';
 import ER from '../../assets/company/firstPageimgs/ER_img.avif';
+import DC from '../../assets/company/firstPageimgs/dressesCollection.webp';
+import KC from '../../assets/company/firstPageimgs/kurtasCollection.webp';
+import WWC from '../../assets/company/firstPageimgs/winterWearCollection.webp';
+import JC from '../../assets/company/firstPageimgs/jewellaryCollection.webp';
 
 const Main = () => {
     const images = [FPIMG1, FPIMG2, FPIMG3, FPIMG4, FPIMG5];
@@ -98,9 +102,27 @@ const Main = () => {
                     </figure>
                 </div>
             </section>
-            <section>
+            <section className='mt-10'>
                 <div>
                     <h1 className='text-center text-2xl tracking-wide font-serif'>Collections</h1>
+                </div>
+                <div className='flex flex-row justify-evenly mt-10'>
+                    <figure>
+                        <img src={DC} className='h-95' alt="" />
+                        <figcaption className='text-lg text-gray-600 font-serif mt-1 font-thin text-center'>Dresses</figcaption>
+                    </figure>
+                    <figure>
+                        <img src={KC} className='h-95' alt="" />
+                            <figcaption className='text-lg text-gray-600 font-serif mt-1 font-thin text-center'>Kurtas</figcaption>
+                    </figure>
+                    <figure>
+                        <img src={WWC} className='h-95'  alt="" />
+                        <figcaption className='text-lg text-gray-600 font-serif mt-1 font-thin text-center'>Winter Wear</figcaption>
+                    </figure>
+                    <figure>
+                        <img src={JC} className='h-95' alt="" />
+                        <figcaption className='text-lg text-gray-600 font-serif mt-1 font-thin text-center'>Jewellery</figcaption>
+                    </figure>
                 </div>
             </section>
         </main>

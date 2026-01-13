@@ -26,11 +26,6 @@
     }
 }
 
-/* .navbar {
-
-    
-} */
-
 .grouper {
     display: flex;
     flex-direction: column;
@@ -109,4 +104,21 @@ summary::after {
 details[open] summary::after {
   content: " ▲"; /* Open state indicator */
   color: chocolate;
+}
+
+.footer {
+    display: block;
+    unicode-bidi: isolate;
+    background: url("https://okhai.org/cdn/shop/files/fotter_bg2.png?v=1703749968") no-repeat center #aeaeae;
+    background-size: 100% 100%;
+}
+
+/* https://okhai.org/cdn/shop/files/Path_73839.png */
+.footer-2 {
+    background: url("https://okhai.org/cdn/shop/files/Path_73839.png") no-repeat center center;
+    background-size: 100% 100%;
+    height: 300px;
+    padding: 63px 30px 20px 30px;
+    position: relative;
+    display: block;
 }

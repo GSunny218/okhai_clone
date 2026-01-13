@@ -2,7 +2,6 @@ import React from 'react';
 import './global.css';
 import Navbar from './components/ui/Navbar.jsx';
 import Footer from './components/ui/Footer.jsx';
-import SlideBar from './components/ui/SlideBar.jsx';
 import Main from './components/ui/Main.jsx';
 
 function App() {
@@ -11,12 +10,11 @@ function App() {
     <>
       <Navbar />
       <div className='absolute top-52 left-0'>
-        <Main/>
+        <Main />
+        <Footer />
       </div>
-      
-      {/* <Footer /> */}
     </>
   )
 }
 
-export default App
+export default App;
