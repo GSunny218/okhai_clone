@@ -146,6 +146,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     {/* Category menu ends here */}
+                    <div className='nav-downarrow'></div>
                 </nav>
             </div>
         </>

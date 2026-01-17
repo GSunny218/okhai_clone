@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className='absolute top-52 left-0'>
+      <div className='absolute top-48 left-0'>
         <Main />
         <Footer />
       </div>
