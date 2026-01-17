@@ -1,4 +1,6 @@
 import React from 'react';
+import FeaturedTop from "../../assets/company/clothingPageImages/artisanal-tops.avif";
+import FeaturedDress from "../../assets/company/clothingPageImages/artisanal-dresses.avif";
 
 const Clothing = () => {
   // Menu data structure
@@ -52,7 +54,7 @@ const Clothing = () => {
         { name: 'Handblock Print', path: '/crafts/handblock-print' },
         { name: 'Hand Painted - Apparel', path: '/crafts/hand-painted' },
         { name: 'Gota Patti', path: '/crafts/gota-patti' },
-        { name: 'Kalamkari', path: '/crafts/kalamkari' }
+        //{ name: 'Kalamkari', path: '/crafts/kalamkari' }
       ]
     }
   };
@@ -60,12 +62,12 @@ const Clothing = () => {
   const featuredSections = [
     {
       title: 'Artisanal Tops',
-      image: '/images/artisanal-tops.jpg',
+      image: FeaturedDress,
       path: '/collections/artisanal-tops'
     },
     {
       title: 'Artisanal Dresses',
-      image: '/images/artisanal-dresses.jpg',
+      image: FeaturedTop,
       path: '/collections/artisanal-dresses'
     }
   ];
@@ -76,12 +78,12 @@ const Clothing = () => {
   };
 
   return (
-    <div className="absolute mt-2 p-8 bg-white border-t-2 border-orange-500 shadow-2xl left-0 min-w-[1000px] z-50">
-      <div className="flex gap-10">
+    <div className="h-auto w-[1200px] grid grid-cols-6 gap-1 p-1 text-sm font-serif bg-white">
+      
         
         {/* Women Section */}
         <div className="flex-1 min-w-[180px]">
-          <h3 className="text-base font-bold text-gray-900 mb-4 uppercase tracking-wider">
+          <h3 className="text-sm font-bold text-gray-900 mb-3">
             {menuData.women.title}
           </h3>
           <ul className="list-none p-0 m-0">
@@ -89,7 +91,7 @@ const Clothing = () => {
               <li 
                 key={index}
                 onClick={() => handleNavigation(item.path)}
-                className="py-2 text-sm text-black cursor-pointer"
+                className="py-1.5 text-xs text-black cursor-pointer"
               >
                 {item.name}
               </li>
@@ -99,7 +101,7 @@ const Clothing = () => {
 
         {/* Men Section */}
         <div className="flex-1 min-w-[180px]">
-          <h3 className="text-base font-bold text-gray-900 mb-4 uppercase tracking-wider">
+          <h3 className="text-sm font-bold text-gray-900 mb-3">
             {menuData.men.title}
           </h3>
           <ul className="list-none p-0 m-0">
@@ -107,7 +109,7 @@ const Clothing = () => {
               <li 
                 key={index}
                 onClick={() => handleNavigation(item.path)}
-                className="py-2 text-sm text-black cursor-pointer"
+                className="py-1.5 text-xs text-black cursor-pointer"
               >
                 {item.name}
               </li>
@@ -117,7 +119,7 @@ const Clothing = () => {
 
         {/* Kids Section */}
         <div className="flex-1 min-w-[180px]">
-          <h3 className="text-base font-bold text-gray-900 mb-4 uppercase tracking-wider">
+          <h3 className="text-sm font-bold text-gray-900 mb-3">
             {menuData.kids.title}
           </h3>
           <ul className="list-none p-0 m-0">
@@ -125,7 +127,7 @@ const Clothing = () => {
               <li 
                 key={index}
                 onClick={() => handleNavigation(item.path)}
-                className="py-2 text-sm text-black cursor-pointer"
+                className="py-1.5 text-xs text-black cursor-pointer"
               >
                 {item.name}
               </li>
@@ -135,7 +137,7 @@ const Clothing = () => {
 
         {/* Crafts Section */}
         <div className="flex-1 min-w-[180px]">
-          <h3 className="text-base font-bold text-gray-900 mb-4 uppercase tracking-wider">
+          <h3 className="text-sm font-bold text-gray-900 mb-3">
             {menuData.crafts.title}
           </h3>
           <ul className="list-none p-0 m-0">
@@ -143,7 +145,7 @@ const Clothing = () => {
               <li 
                 key={index}
                 onClick={() => handleNavigation(item.path)}
-                className="py-2 text-sm text-black cursor-pointer"
+                className="py-1.5 text-xs text-black cursor-pointer"
               >
                 {item.name}
               </li>
@@ -152,7 +154,8 @@ const Clothing = () => {
         </div>
 
         {/* Featured Section */}
-        <div className="flex flex-col gap-5 min-w-[200px]">
+        <div className="col-span-2 flex gap-5">
+
           {featuredSections.map((section, index) => (
             <div 
               key={index}
@@ -162,9 +165,9 @@ const Clothing = () => {
               <img 
                 src={section.image} 
                 alt={section.title}
-                className="w-full h-48 object-cover block rounded-lg"
+                className="w-full h-72 object-cover rounded-none"
               />
-              <p className="text-center mt-2.5 text-sm font-semibold text-gray-800">
+              <p className=" mt-2.5 text-sm font-semibold text-gray-800">
                 {section.title}
               </p>
             </div>
@@ -172,7 +175,7 @@ const Clothing = () => {
         </div>
 
       </div>
-    </div>
+    
   );
 };
 

@@ -97,7 +97,7 @@ const Navbar = () => {
                         <div className='flex flex-row h-12 m-3 gap-x-25 text-lg category-menu justify-center pt-3'>
                             <details>
                                 <summary>CLOTHING</summary>
-                                <div className='absolute mt-2 p-4 bg-white border-2 border-black shadow-lg'>
+                                <div className='absolute mt-2 p-4 bg-white  shadow-lg'>
                                     <Clothing />
                                 </div>
                             </details>
