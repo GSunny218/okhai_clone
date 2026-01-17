@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+    --breakpoint-xs: 30rem;
+}
+
 /* Announcement-style: appear then slide up with fade */
 @keyframes slideUpFadeOut {
     0% {
@@ -121,4 +125,10 @@ details[open] summary::after {
     padding: 63px 30px 20px 30px;
     position: relative;
     display: block;
+}
+
+svg {
+    color: inherit;
+    width: 18px;
+    height: 18px;
 }
