@@ -23,13 +23,13 @@ const Footer = () => {
                                 <li>Explore</li>
                                 <li>
                                     <ul className='mt-5 text-xs space-y-1'>
-                                        <li>About us</li>
-                                        <li>Partner onboarding</li>
-                                        <li>News and events</li>
-                                        <li>Work with us</li>
-                                        <li>Bulk Order</li>
-                                        <li>Return Order</li>
-                                        <li>Blogs</li>
+                                        <li className='cursor-pointer hover:text-amber-400'>About us</li>
+                                        <li className='cursor-pointer hover:text-amber-400'>Partner onboarding</li>
+                                        <li className='cursor-pointer hover:text-amber-400'>News and events</li>
+                                        <li className='cursor-pointer hover:text-amber-400'>Work with us</li>
+                                        <li className='cursor-pointer hover:text-amber-400'>Bulk Order</li>
+                                        <li className='cursor-pointer hover:text-amber-400'>Return Order</li>
+                                        <li className='cursor-pointer hover:text-amber-400'>Blogs</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -39,9 +39,9 @@ const Footer = () => {
                                 <li>Help</li>
                                 <li>
                                     <ul className='mt-5 text-xs space-y-1'>
-                                        <li>Privacy and terms of use</li>
-                                        <li>Shipping and cancellation</li>
-                                        <li>FAQ's</li>
+                                        <li className='cursor-pointer hover:text-amber-400'>Privacy and terms of use</li>
+                                        <li className='cursor-pointer hover:text-amber-400'>Shipping and cancellation</li>
+                                        <li className='cursor-pointer hover:text-amber-400'>FAQ's</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -51,11 +51,11 @@ const Footer = () => {
                                 <li>Connect with us</li>
                                 <li>
                                     <ul className='mt-5 text-xs space-y-1'>
-                                        <li>Contact us</li>
-                                        <li>079-66131721</li>
-                                        <li>+91 6359 021 222</li>
-                                        <li>okhaicfe@okhai.org</li>
-                                        <li>Store locator</li>
+                                        <li className='cursor-pointer hover:text-amber-400'>Contact us</li>
+                                        <li className='cursor-pointer hover:text-amber-400'>079-66131721</li>
+                                        <li className='cursor-pointer hover:text-amber-400'>+91 6359 021 222</li>
+                                        <li className='cursor-pointer hover:text-amber-400'>okhaicfe@okhai.org</li>
+                                        <li className='cursor-pointer hover:text-amber-400'>Store locator</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -65,20 +65,20 @@ const Footer = () => {
                                 <li>Categories</li>
                                 <li>
                                     <ul className='mt-5 text-xs space-y-1'>
-                                        <li>Apparel</li>
-                                        <li>Home decor</li>
-                                        <li>Accessories</li>
-                                        <li>Gift and toys</li>
+                                        <li className='cursor-pointer  hover:text-amber-400'>Apparel</li>
+                                        <li className='cursor-pointer hover:text-amber-400'>Home decor</li>
+                                        <li className='cursor-pointer hover:text-amber-400'>Accessories</li>
+                                        <li className='cursor-pointer hover:text-amber-400'>Gift and toys</li>
                                     </ul>
                                 </li>
                             </ul>
                         </div>
                         <div className='flex flex-row justify-between mt-10'>
                             <figure>
-                                <img className='h-20' src={footerImage1} alt="Footer Image 1" />
+                                <img className='h-20 cursor-pointer' src={footerImage1} alt="Footer Image 1" />
                             </figure>
                             <figure>
-                                <img className='ml-4 h-20' src={footerImage2} alt="Footer Image 2" />
+                                <img className='ml-4 h-20 cursor-pointer' src={footerImage2} alt="Footer Image 2" />
                             </figure>
                         </div>
                     </div>
