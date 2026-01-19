@@ -2,24 +2,25 @@ import React from 'react';
 import FeaturedTop from "../../assets/company/clothingPageImages/artisanal-tops.avif";
 import FeaturedDress from "../../assets/company/clothingPageImages/artisanal-dresses.avif";
 
+
 const Clothing = () => {
   // Menu data structure
   const menuData = {
     women: {
       title: 'Women',
       items: [
-        { name: 'All Clothing', path: '/women/all-clothing' },
-        { name: 'New Arrivals', path: '/women/new-arrivals' },
-        { name: 'Kurtas & Kurta Sets', path: '/women/kurtas' },
-        { name: 'Dresses & Jumpsuits', path: '/women/dresses' },
-        { name: 'Tops & Blouses', path: '/women/tops' },
-        { name: 'Jackets & Blazers', path: '/women/jackets' },
-        { name: 'Co-ord Sets', path: '/women/coord-sets' },
-        { name: 'Wrap Dresses', path: '/women/wrap-dresses' },
-        { name: 'Kaftans', path: '/women/kaftans' },
-        { name: 'Bottom Wear', path: '/women/bottom-wear' },
-        { name: 'Dupattas, Scarfs & Stoles', path: '/women/dupattas' },
-        { name: 'Night Suits', path: '/women/night-suits' }
+        { name: 'All Clothing', path: '../../pages/women/all-clothing' },
+        { name: 'New Arrivals', path: '../../pages/women/new-arrivals' },
+        { name: 'Kurtas & Kurta Sets', path: '../../pages/women/kurtas' },
+        { name: 'Dresses & Jumpsuits', path: '../../pages/women/dresses' },
+        { name: 'Tops & Blouses', path: '../../pages/women/tops' },
+        { name: 'Jackets & Blazers', path: '../../pages/women/jackets' },
+        { name: 'Co-ord Sets', path: '../../pages/women/coord-sets' },
+        { name: 'Wrap Dresses', path: '../../pages/women/wrap-dresses' },
+        { name: 'Kaftans', path: '../../pages/women/kaftans' },
+        { name: 'Bottom Wear', path: '../../pages/women/bottom-wear' },
+        { name: 'Dupattas, Scarfs & Stoles', path: '../../pages/women/dupattas' },
+        { name: 'Night Suits', path: '../../pages/women/night-suits' }
       ]
     },
     men: {
