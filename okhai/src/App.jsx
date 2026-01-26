@@ -3,7 +3,7 @@ import './global.css';
 import Navbar from './components/ui/Navbar.jsx';
 import Footer from './components/ui/Footer.jsx';
 import Main from './components/ui/Main.jsx';
-import AllClothing from './pages/women/all-clothing.jsx';
+import AllClothing from './components/collections/Clothing/products/women/all-clothing.jsx';
 
 function App() {
 

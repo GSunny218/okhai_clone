@@ -1,5 +1,5 @@
-import Kurta1 from "../../assets/company/clothingPageImages/kurta1.jpg";
-import Dress1 from "../../assets/company/clothingPageImages/dress1.webp";
+import Kurta1 from "../../../../assets/company/clothingPageImages/kurta1.jpg";
+import Dress1 from "../../../../assets/company/clothingPageImages/dress1.webp";
 
 const imageMap = {
   "kurta1.jpg": Kurta1,
