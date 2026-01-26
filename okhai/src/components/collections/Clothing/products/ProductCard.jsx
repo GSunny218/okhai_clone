@@ -10,7 +10,7 @@ const ProductCard = ({ product }) => {
   return (
     <div className="cursor-pointer group">
       {/* IMAGE CONTAINER */}
-      <div className="relative w-full h-[480px] overflow-hidden">
+      <div className="relative w-full h-120 overflow-hidden">
         <img
           src={imageMap[product.image]}
           alt={product.name}

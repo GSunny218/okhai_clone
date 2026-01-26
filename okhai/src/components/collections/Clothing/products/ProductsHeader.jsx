@@ -1,6 +1,6 @@
 const ProductsHeader = ({ total }) => {
   return (
-    <div className="flex justify-between items-center mb-6 max-w-[1100px]">
+    <div className="flex justify-between items-center mb-6 max-w-275">
       <p className="text-sm">{total} Products</p>
 
       <select className="border px-4 py-2 text-sm">
