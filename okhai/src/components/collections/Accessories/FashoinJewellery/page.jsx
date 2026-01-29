@@ -1,12 +1,15 @@
 import React from 'react';
+import FiltersSideBar from '../filters/filtersSideBar.jsx';
 
 const FashoinJewellery = () => {
     
     return (
         <>
-            <div>
-                <img src="	" alt="" />
-            </div>
+            <main className=''>
+                <section>
+                    <aside><FiltersSideBar /></aside>
+                </section>
+            </main>
         </>
     );
 }

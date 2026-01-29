@@ -49,7 +49,7 @@ export default allAccessoriesProducts = {
             _id: 'beachBags',
             name: 'House Of Macrame "Fringe Fest" Handcrafted Clutch Bag',
             price: 1850,
-            image: [],
+            image: ['https://okhai.org/cdn/shop/products/HMOKH000001-FFCB-2.jpg?v=1754296417&width=750', 'https://okhai.org/cdn/shop/products/HMOKH000001-FFCB-4.jpg?v=1754296417&width=750', 'https://okhai.org/cdn/shop/products/HMOKH000001-FFCB-6.jpg?v=1754296417&width=750', 'https://okhai.org/cdn/shop/products/HMOKH000001-FFCB-1.jpg?v=1754296417&width=750', 'https://okhai.org/cdn/shop/products/HMOKH000001-FFCB-3.jpg?v=1754296417&width=750', 'https://okhai.org/cdn/shop/products/HMOKH000001-FFCB-5.jpg?v=1754296417&width=750'],
             isNew: true,
             description: 'Fashionable and sustainable, the Fringe Fest clutch is the perfect companion for outings with your woke friends. Be an environment companion and let your fashion do the talkingIt has a small pouch with a zipper to keep your tiny trinkets safely inside.House of Macrame is a small group of woman artisans based in a small town of Banswara, in Rajasthan. Our motto is to teach this craft to as many women as possible and provide them with an extra source of income while creating beautiful products for our beloved patrons.',
             washCare: 'Cotton Apparel - Hand wash separately. Silk & Madhubani - Dry clean only. Baskets & Show Pieces - Clean with a wet cloth. For any other product - Please find the wash care in the product description.',

@@ -21,6 +21,7 @@ const Navbar = () => {
     // const handleSlideBarClick = () => {
     //     navigate('/SlideBar');
     // }
+    document.title = "Authentic Handmade Embroidered Designer Dresses and Kurtas | Okhai store"
     const [currentIndex, setCurrentIndex] = useState(0);
     const taglines = [
         { text: 'Meticulously Designed & Handmade in Hierloom Indian Crafts.', bg: 'bg-orange-300' },
@@ -94,56 +95,72 @@ const Navbar = () => {
 
                     {/* Category menu starts here */}
                     <div>
-                        <div className='flex flex-row h-12 m-3 gap-x-25 text-lg category-menu justify-center pt-3'>
-                            <details>
-                                <summary>CLOTHING</summary>
-                                <div className='absolute mt-2 p-4 bg-white  shadow-lg'>
-                                    <Clothing />
-                                </div>
-                            </details>
-                            <details>
-                                <summary>KURTAS</summary>
-                                <div className='absolute mt-2 p-4 bg-white border-2 border-black shadow-lg'>
-                                    <Kurtas />
-                                </div>
-                            </details>
-                            <details>
+                        <ul className='flex flex-row h-12 m-3 gap-x-25 text-lg category-menu justify-center pt-3'>
+                            <li>
+                                <details>
+                                    <summary>CLOTHING</summary>
+                                    <div className='absolute mt-2 p-4 bg-white  shadow-lg'>
+                                        <Clothing />
+                                    </div>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>KURTAS</summary>
+                                    <div className='absolute mt-2 p-4 bg-white border-2 border-black shadow-lg'>
+                                        <Kurtas />
+                                    </div>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
                                 <summary>SAREES</summary>
                                 <div className='absolute mt-2 p-4 bg-white border-2 border-black shadow-lg'>
                                     <Sarees />
                                 </div>
                             </details>
-                            <details>
-                                <summary>ACCESSORIES</summary>
-                                <div className='absolute  mt-2 p-4 bg-white shadow-lg inset-x-40'>
-                                    <Accessories />
-                                </div>
-                            </details>
-                            <details>
-                                <summary>HOME</summary>
-                                <div className='absolute mt-2 p-4 bg-white border-2 border-black shadow-lg inset-x-30'>
-                                    <Home />
-                                </div>
-                            </details>
-                            <details>
-                                <summary>GIFTING</summary>
-                                <div className='absolute mt-2 p-4 bg-white border-2 border-black shadow-lg inset-x-30'>
-                                    <Gifting />
-                                </div>
-                            </details>
-                            <details>
-                                <summary>ARTISANS</summary>
-                                <div className='absolute mt-2 p-4 bg-white border-2 border-black shadow-lg inset-x-30'>
-                                    <Artisans />
-                                </div>
-                            </details>
-                            <details>
-                                <summary>SALE ALL</summary>
-                                <div className='absolute mt-2 p-4 bg-white border-2 border-black shadow-lg'>
-                                    <SaleAll />
-                                </div>
-                            </details>
-                        </div>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>ACCESSORIES</summary>
+                                    <div className='absolute  mt-2 p-4 bg-white shadow-lg inset-x-40'>
+                                        <Accessories />
+                                    </div>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>HOME</summary>
+                                    <div className='absolute mt-2 p-4 bg-white border-2 border-black shadow-lg inset-x-30'>
+                                        <Home />
+                                    </div>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>GIFTING</summary>
+                                    <div className='absolute mt-2 p-4 bg-white border-2 border-black shadow-lg inset-x-30'>
+                                        <Gifting />
+                                    </div>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>ARTISANS</summary>
+                                    <div className='absolute mt-2 p-4 bg-white border-2 border-black shadow-lg inset-x-30'>
+                                        <Artisans />
+                                    </div>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>SALE ALL</summary>
+                                    <div className='absolute mt-2 p-4 bg-white border-2 border-black shadow-lg'>
+                                        <SaleAll />
+                                    </div>
+                                </details>
+                            </li>
+                        </ul>
                     </div>
                     {/* Category menu ends here */}
                     <div className='nav-downarrow'></div>
