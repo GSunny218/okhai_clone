@@ -15,9 +15,9 @@ function App() {
       
       </div> */}
       <div className='absolute top-48 left-0'>
-        {/* <Main /> */}
+        <Main />
         {/* <AllClothing /> */}
-        <FashoinJewellery />
+        {/* <FashoinJewellery /> */}
         <Footer />
       </div>
     </>
